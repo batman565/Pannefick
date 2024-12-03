@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylemain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Golos+Text:wght@700&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
+    <title>PANNEFICK</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="" alt="">
+        </div>
+        <ul style="display: flex; flex-direction: row; list-style: none; position: relative; right: 300px">
+            <li class="navigati"><a class="navigation" href="#">Коллекция</a></li>
+            <li class="navigati"><a class="navigation" href="#">Новости</a></li>
+            <li class="navigati"><a class="navigation" href="#">Отзывы</a></li>
+            <li class="navigati"><a class="navigation" href="#">Информация</a></li>
+        </ul>
+        </div>
+        <div>
+            <p style="position: relative; left:130px;" class="navigati"><a class="navigation" href="#" onclick="toggleForm(event)">Вход/регистрация</a></p>
+        </div>
+    </header>
+    <main>
+        <div style="height: 600px; overflow: hidden;">
+            <h1 class="mainlogo">PANNEFICK</h1>
+            <video autoplay loop muted class="videoback">
+                <source src="Rick Roll.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div class="mainother">
+            <div class="sex">
+                <a href="#" class="photo" style="margin-right: 200px;"><img src="vadim.jpg" alt="" height="400px" width="500px"></a>
+                <a href="#" class="photo"><img src="Cristina.jpg" alt="" height="400px" width="500px"></a>
+            </div>
+        </div>
+    </main>
+    <div class="form_container" id="form">
+        <div class="form_content">
+        <h3 style="font-weight: 100;">Вход/регистрация</h3>
+        <button class="close-button" id="closeButton" onclick="closeForm()">X</button>
+        </div>
+        <form class="form_number">
+            <label for="number">Номер телефона</label><br><br><br>
+            <input class="number" type="text" name="number" id="number" placeholder="+7"></inputtype><br><br><br><br>
+            <input class="button1" type="submit" value="Отправить"><br><br>
+        </form>
+    </div>
+</body>
+</html>

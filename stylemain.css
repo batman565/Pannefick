@@ -1,0 +1,139 @@
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: "Golos Text", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+ }
+ 
+ body{
+    background-color: black;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    position:sticky;
+    top: 0;
+
+}
+
+.navigation{
+    text-decoration: none;
+    color:black;
+    font-size: 17px;
+    transition: transform 0.2s;
+}
+
+li{
+    margin-right: 15px;
+}
+
+.mainlogo{
+    color:white;
+    font-size: 150px;
+    padding: 20px;
+    padding-left: 30px;
+    font-family: "Golos Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.mainother{
+    background-color:white;
+}
+
+.sex{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    justify-content: center;
+}
+
+main{
+    height: 1000px;
+}
+
+.videoback{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -9999;
+    object-fit: cover;
+}
+
+.photo{
+    transition: transform 0.2s;
+}
+
+.photo:hover{
+    transform: scale(1.10);
+}
+
+.navigati{
+    transition: transform 0.2s;
+}
+
+.navigati:hover{
+    transform: scale(1.05);
+}
+
+.form_container{
+    display: none; /* Скрываем форму по умолчанию */
+    position: fixed;
+    left: 76%; /* Центрируем форму по горизонтали */
+    bottom: 40%;
+    height: 300px; /* Автоматическая высота для адаптации содержимого */
+    width: 50%; /* Ширина 80% от ширины экрана */
+    max-width: 300px; /* Максимальная ширина формы */
+    background-color: white; /* Цвет фона формы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для формы */
+    padding: 20px; /* Отступы внутри формы */
+    transition: 0.2s; /* Плавный переход */
+    z-index: 1000; /* Устанавливаем высокий z-index для формы */
+}
+
+.form_number{
+    position: relative;
+    top: 15px;
+    text-align: center;
+}
+
+.number{
+    border: 0;
+    color: black;
+    background-color: rgb(188, 188, 188);
+    height: 30px;
+    width: 250px;
+    font-weight: 400;
+    padding: 5px;
+}
+
+.button1{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width:100px;
+}
+
+.close-button{
+    position: relative; left: 50px; text-decoration: none black; border: 0; background-color: white; font-size: 17px;
+}
+
+.close-button:hover{
+    color:red;
+}
+
+.form_content{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
